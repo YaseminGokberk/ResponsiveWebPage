@@ -14,10 +14,12 @@ a{
 }
 
 a:link, a:visited{
+	color: #CF5C3F;
 
 }
 a:hover, a:active{
-
+	background-color: #CF5C3F;
+	color: white;
 }
 
 .body {
@@ -60,7 +62,7 @@ a:hover, a:active{
 }
 .mainHeader nav a:hover,
 .mainHeader nav a:active,
-.mainHeader nav a.active a:link,
+.mainHeader nav .active a:link,
 .mainHeader nav .active a:visited {
 	background-color: #CF5C3F;
 	text-shadow:none;
@@ -117,10 +119,15 @@ a:hover, a:active{
 	margin-top: 2%;
 	margin-left: 3%;
 	margin-bottom: 2%;
-	padding-left: 2%;
-	padding-right: 2%;
+	padding: 2% 3%;
 
 	
+}
+
+.post-info{
+	font-style: italic;
+	color:#999;
+	font-size:90%;
 }
 
 .middle-sidebar {
@@ -133,7 +140,7 @@ a:hover, a:active{
 	margin-left: 3%;
 	margin-bottom: 2%;
 	padding-left: 2%;
-	padding-right: 2%;
+	padding-right: 3%;
 
 	
 }
@@ -148,8 +155,95 @@ a:hover, a:active{
 	margin-left: 3%;
 	margin-bottom: 2%;
 	padding-left: 2%;
-	padding-right: 2%;
+	padding-right: 3%;
 
 
 }
-/* 45:01; */
+
+.mainFooter{
+	width: 97%;
+	height: 40px;
+	float: left;
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background-color:#CFDC6F; 
+	margin: 2% 0;
+	/* (top-bottom),(left-right) */
+
+	/*margin-top:2%;
+	margin-bottom: 2%; */
+}
+
+.mainFooter p {
+	width: 92%;
+	margin: 10px; auto;
+	color: #FFF;
+
+}
+
+@media only screen and (min-width: 15px) and (max-width:600px)
+{
+
+.body {
+	width: 90%;
+	font-size: 95%;
+	}
+
+.mainHeader img {
+	width: 100%;
+	}
+
+	.mainHeader nav {
+
+	height: 160px;
+
+}
+
+.mainHeader nav ul {
+	padding-left: 0;
+}
+.mainHeader nav ul li {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.mainHeader nav a:link, .mainHeader nav a:visited {
+	padding: 10px 25px;
+	height: 20px; 
+	display: block;
+}
+
+.content{
+	width: 100%;
+	float: left;
+	margin-top: 2%;
+}
+
+.post-info{
+	display: none;
+}
+
+	
+
+.topcontent {
+	padding: 3% 5%;
+	margin-top: 2%;
+	margin-bottom: 4%;
+}
+
+.bottomcontent {
+	margin-top: 3%;
+
+}
+
+
+.top-sidebar, .middle-sidebar, .bottom-sidebar {
+	width: 94%;
+	margin: 2% 0 2% 0;
+	padding: 2% 3%;
+	}
+
+
+}
+
